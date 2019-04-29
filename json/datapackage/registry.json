@@ -2,64 +2,64 @@
   {
     "id": "data-package",
     "title": "Data Package",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/data-package.json",
+    "schema": "/data-package.json",
     "schema_path": "/data-package.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/data-package/"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/data-package.json"
   },
   {
     "id": "tabular-data-package",
     "title": "Tabular Data Package",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/tabular-data-package.json",
+    "schema": "/tabular-data-package.json",
     "schema_path": "/tabular-data-package.json",
-    "specification": "http://specs.frictionlessdata.io/tabular-data-package/"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/tabular-data-package.json"
   },
   {
     "id": "fiscal-data-package",
     "title": "Fiscal Data Package",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/fiscal-data-package.json",
+    "schema": "/fiscal-data-package.json",
     "schema_path": "/fiscal-data-package.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/fiscal-data-package/"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/fiscal-data-package.json"
   },
   {
     "id": "data-resource",
     "title": "Data Resource",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/data-resource.json",
+    "schema": "/data-resource.json",
     "schema_path": "/data-resource.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/data-resource"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/data-resource.json"
   },
   {
     "id": "artifact-data-resource",
     "title": "Artifact Data Resource",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/artifact-data-resource.json",
+    "schema": "/artifact-data-resource.json",
     "schema_path": "/artifact-data-resource.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/artifact-data-resource"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/artifact-data-resource.json"
   },
   {
     "id": "bizapp-data-resource",
     "title": "BizApp Data Resource",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/bizapp-data-resource.json",
+    "schema": "/bizapp-data-resource.json",
     "schema_path": "/bizapp-data-resource.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/bizapp-data-resource"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/bizapp-data-resource.json"
   },
   {
     "id": "output-data-resource",
     "title": "Output Data Resource",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/output-data-resource.json",
+    "schema": "/output-data-resource.json",
     "schema_path": "/bizapp-data-resource.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/output-data-resource"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/output-data-resource.json"
   },
   {
     "id": "tabular-data-resource",
     "title": "Tabular Data Resource",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/tabular-data-resource.json",
+    "schema": "/tabular-data-resource.json",
     "schema_path": "/tabular-data-resource.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/tabular-data-resource"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/tabular-data-resource.json"
   },
   {
     "id": "table-schema",
     "title": "Table Schema",
-    "schema": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/table-schema.json",
+    "schema": "/table-schema.json",
     "schema_path": "/table-schema.json",
-    "specification": "https://github.com/OneCloudInc/schemas/raw/master/json/datapackage/table-schema/"
+    "specification": "https://raw.githubusercontent.com/OneCloudInc/schemas/master/json/datapackage/table-schema.json"
   }
 ]
