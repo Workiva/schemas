@@ -3,12 +3,7 @@
   "title": "BizApp Data Resource",
   "description": "OneCloud BizApp Resource.  This resource is a file that a OneCloud BizApp requires to run a command.",
   "type": "object",
-  "required": [
-    "id",
-    "name",
-    "profile",
-    "path"
-  ],
+  "required": ["id", "name", "profile", "path"],
   "properties": {
     "profile": {
       "propertyOrder": 10,
@@ -27,27 +22,21 @@
       "title": "ID",
       "description": "A globally unique identifier.",
       "type": "number",
-      "examples": [
-        "{\n  \"id\": 10\n}\n"
-      ]
+      "examples": ["{\n  \"id\": 10\n}\n"]
     },
     "pluginId": {
       "propertyOrder": 17,
       "title": "BizApp ID",
       "description": "The unique ID of the associated BizApp.",
       "type": "number",
-      "examples": [
-        "{\n  \"pluginId\": 8\n}\n"
-      ]
+      "examples": ["{\n  \"pluginId\": 8\n}\n"]
     },
     "version": {
       "propertyOrder": 18,
       "title": "BizApp Version",
       "description": "The version of the BizApp.",
       "type": "number",
-      "examples": [
-        "{\n  \"version\": 8\n}\n"
-      ]
+      "examples": ["{\n  \"version\": 8\n}\n"]
     },
     "name": {
       "propertyOrder": 20,
@@ -56,9 +45,7 @@
       "type": "string",
       "pattern": "^([-a-zA-Z0-9._/])+$",
       "context": "This is ideally a url-usable and human-readable name. Name `SHOULD` be invariant, meaning it `SHOULD NOT` change when its parent descriptor is updated.",
-      "examples": [
-        "{\n  \"name\": \"my-nice-name\"\n}\n"
-      ]
+      "examples": ["{\n  \"name\": \"my-nice-name\"\n}\n"]
     },
     "path": {
       "propertyOrder": 30,
@@ -112,9 +99,7 @@
       "title": "Title",
       "description": "A human-readable title.",
       "type": "string",
-      "examples": [
-        "{\n  \"title\": \"My Package Title\"\n}\n"
-      ]
+      "examples": ["{\n  \"title\": \"My Package Title\"\n}\n"]
     },
     "description": {
       "propertyOrder": 60,
@@ -131,9 +116,7 @@
       "description": "The file format of this resource.",
       "context": "`csv`, `xls`, `json` are examples of common formats.",
       "type": "string",
-      "examples": [
-        "{\n  \"format\": \"xls\"\n}\n"
-      ]
+      "examples": ["{\n  \"format\": \"xls\"\n}\n"]
     },
     "mediatype": {
       "propertyOrder": 90,
@@ -141,9 +124,7 @@
       "description": "The media type of this resource. Can be any valid media type listed with [IANA](https://www.iana.org/assignments/media-types/media-types.xhtml).",
       "type": "string",
       "pattern": "^(.+)/(.+)$",
-      "examples": [
-        "{\n  \"mediatype\": \"text/csv\"\n}\n"
-      ]
+      "examples": ["{\n  \"mediatype\": \"text/csv\"\n}\n"]
     },
     "encoding": {
       "propertyOrder": 100,
@@ -151,27 +132,21 @@
       "description": "The file encoding of this resource.",
       "type": "string",
       "default": "utf-8",
-      "examples": [
-        "{\n  \"encoding\": \"utf-8\"\n}\n"
-      ]
+      "examples": ["{\n  \"encoding\": \"utf-8\"\n}\n"]
     },
     "encrypted": {
       "propertyOrder": 110,
       "title": "Encrypted",
       "description": "Whether or not the resource is encrypted.",
       "type": "boolean",
-      "examples": [
-        "{\n  \"encrypted\": true\n}\n"
-      ]
+      "examples": ["{\n  \"encrypted\": true\n}\n"]
     },
     "cdn": {
       "propertyOrder": 115,
       "title": "CDN Enabled",
       "description": "Whether or not the resource path should be CDN signed when passing this resource to another service.",
       "type": "boolean",
-      "examples": [
-        "{\n  \"cdn\": true\n}\n"
-      ]
+      "examples": ["{\n  \"cdn\": true\n}\n"]
     },
     "bytes": {
       "propertyOrder": 120,
@@ -181,9 +156,7 @@
       "title": "Bytes",
       "description": "The size of this resource in bytes.",
       "type": "integer",
-      "examples": [
-        "{\n  \"bytes\": 2082\n}\n"
-      ]
+      "examples": ["{\n  \"bytes\": 2082\n}\n"]
     },
     "hash": {
       "propertyOrder": 130,
@@ -198,6 +171,13 @@
         "{\n  \"hash\": \"d25c9c77f588f5dc32059d2da1136c02\"\n}\n",
         "{\n  \"hash\": \"SHA256:5262f12512590031bbcc9a430452bfd75c2791ad6771320bb4b5728bfb78c4d0\"\n}\n"
       ]
+    },
+    "compression": {
+      "propertyOrder": 135,
+      "title": "Compression",
+      "description": "Compression algorithm used by the resource (if any)",
+      "type": "string",
+      "examples": ["{\n  \"compression\": \"gz\"\n}\n"]
     }
   }
 }
