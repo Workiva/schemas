@@ -7,7 +7,7 @@
   "properties": {
     "profile": {
       "propertyOrder": 10,
-      "default": "output-data-resource",
+      "default": "output-data-resource-template",
       "title": "Profile",
       "description": "The profile of this descriptor.",
       "context": "Every Package and Resource descriptor has a profile. The default profile, if none is declared, is `data-package` for Package and `data-resource` for Resource.",

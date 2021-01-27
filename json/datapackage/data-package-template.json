@@ -8,7 +8,7 @@
   ],
   "properties": {
     "profile": {
-      "default": "data-package",
+      "default": "data-package-template",
       "propertyOrder": 10,
       "title": "Profile",
       "description": "The profile of this descriptor.",
