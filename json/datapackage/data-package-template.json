@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Data Package",
-  "description": "Data Package is a simple specification for data access and delivery.",
+  "title": "Data Package Template",
+  "description": "Data Package template is used as an output of a Connector Studio Processor.  It is identical to  Data Package, except that it includes output-data-resource-templates in its resources.",
   "type": "object",
   "required": [
     "resources"
@@ -52,6 +52,7 @@
     },
     "description": {
       "propertyOrder": 50,
+      "format": "textarea",
       "title": "Description",
       "description": "A text description. Markdown is encouraged.",
       "type": "string",
@@ -102,6 +103,7 @@
             "title": "Path",
             "description": "A fully qualified URL, or a POSIX file path..",
             "type": "string",
+            "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
             "examples": [
               "{\n  \"path\": \"file.csv\"\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -188,6 +190,7 @@
             "title": "Path",
             "description": "A fully qualified URL, or a POSIX file path..",
             "type": "string",
+            "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
             "examples": [
               "{\n  \"path\": \"file.csv\"\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -207,7 +210,7 @@
       },
       "context": "This property is not legally binding and does not guarantee that the package is licensed under the terms defined herein.",
       "examples": [
-        "{\n  \"licenses\": [\n    {\n      \"name\": \"odc-pddl-1.0\",\n      \"uri\": \"http://opendatacommons.org/licenses/pddl/\"\n    }\n  ]\n}\n"
+        "{\n  \"licenses\": [\n    {\n      \"name\": \"odc-pddl-1.0\",\n      \"path\": \"http://opendatacommons.org/licenses/pddl/\",\n      \"title\": \"Open Data Commons Public Domain Dedication and License v1.0\"\n    }\n  ]\n}\n"
       ]
     },
     "resources": {
@@ -308,6 +311,7 @@
           },
           "description": {
             "propertyOrder": 60,
+            "format": "textarea",
             "title": "Description",
             "description": "A text description. Markdown is encouraged.",
             "type": "string",
@@ -333,7 +337,7 @@
             "title": "Sources",
             "description": "The raw sources for this resource.",
             "type": "array",
-            "minItems": 1,
+            "minItems": 0,
             "items": {
               "title": "Source",
               "description": "A source file.",
@@ -354,6 +358,7 @@
                   "title": "Path",
                   "description": "A fully qualified URL, or a POSIX file path..",
                   "type": "string",
+                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                   "examples": [
                     "{\n  \"path\": \"file.csv\"\n}\n",
                     "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -372,7 +377,7 @@
               }
             },
             "examples": [
-              "{\n  \"sources\": [\n    {\n      \"name\": \"World Bank and OECD\",\n      \"uri\": \"http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\"\n    }\n  ]\n}\n"
+              "{\n  \"sources\": [\n    {\n      \"title\": \"World Bank and OECD\",\n      \"path\": \"http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\"\n    }\n  ]\n}\n"
             ]
           },
           "licenses": {
@@ -399,6 +404,7 @@
                   "title": "Path",
                   "description": "A fully qualified URL, or a POSIX file path..",
                   "type": "string",
+                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                   "examples": [
                     "{\n  \"path\": \"file.csv\"\n}\n",
                     "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -418,7 +424,7 @@
             },
             "context": "This property is not legally binding and does not guarantee that the package is licensed under the terms defined herein.",
             "examples": [
-              "{\n  \"licenses\": [\n    {\n      \"name\": \"odc-pddl-1.0\",\n      \"uri\": \"http://opendatacommons.org/licenses/pddl/\"\n    }\n  ]\n}\n"
+              "{\n  \"licenses\": [\n    {\n      \"name\": \"odc-pddl-1.0\",\n      \"path\": \"http://opendatacommons.org/licenses/pddl/\",\n      \"title\": \"Open Data Commons Public Domain Dedication and License v1.0\"\n    }\n  ]\n}\n"
             ]
           },
           "format": {
@@ -491,7 +497,7 @@
       "title": "Sources",
       "description": "The raw sources for this resource.",
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "title": "Source",
         "description": "A source file.",
@@ -512,6 +518,7 @@
             "title": "Path",
             "description": "A fully qualified URL, or a POSIX file path..",
             "type": "string",
+            "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
             "examples": [
               "{\n  \"path\": \"file.csv\"\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -530,7 +537,7 @@
         }
       },
       "examples": [
-        "{\n  \"sources\": [\n    {\n      \"name\": \"World Bank and OECD\",\n      \"uri\": \"http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\"\n    }\n  ]\n}\n"
+        "{\n  \"sources\": [\n    {\n      \"title\": \"World Bank and OECD\",\n      \"path\": \"http://data.worldbank.org/indicator/NY.GDP.MKTP.CD\"\n    }\n  ]\n}\n"
       ]
     }
   }

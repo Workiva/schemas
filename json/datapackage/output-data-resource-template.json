@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Output Data Resource",
+  "title": "Output Data Resource Template",
   "description": "OneCloud Output Resource Template.  This resource represents the output of a Connector Studio Processor.  Since it can produce a file or a scalar data value, neither data or path is required.",
   "type": "object",
   "required": ["name", "title"],
