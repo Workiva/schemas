@@ -1659,6 +1659,15 @@
         "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
       ]
     },
+    "recordCount": {
+      "propertyOrder": 65,
+      "title": "Record Count",
+      "description": "The number of records in the table.",
+      "type": "integer",
+      "examples": [
+        "{\n  \"recordCount\": 1234\n}\n"
+      ]
+    },
     "homepage": {
       "propertyOrder": 70,
       "title": "Home Page",
