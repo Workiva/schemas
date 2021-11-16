@@ -55,7 +55,6 @@
     },
     "description": {
       "propertyOrder": 50,
-      "format": "textarea",
       "title": "Description",
       "description": "A text description. Markdown is encouraged.",
       "type": "string",
@@ -106,7 +105,7 @@
             "title": "Path",
             "description": "A fully qualified URL, or a POSIX file path..",
             "type": "string",
-            "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+            "pattern": ".*",
             "examples": [
               "{\n  \"path\": \"file.csv\"\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -193,7 +192,7 @@
             "title": "Path",
             "description": "A fully qualified URL, or a POSIX file path..",
             "type": "string",
-            "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+            "pattern": ".*",
             "examples": [
               "{\n  \"path\": \"file.csv\"\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -279,7 +278,7 @@
                 "title": "Path",
                 "description": "A fully qualified URL, or a POSIX file path..",
                 "type": "string",
-                "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+                "pattern": ".*",
                 "examples": [
                   "{\n  \"path\": \"file.csv\"\n}\n",
                   "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -293,7 +292,7 @@
                   "title": "Path",
                   "description": "A fully qualified URL, or a POSIX file path..",
                   "type": "string",
-                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+                  "pattern": ".*",
                   "examples": [
                     "{\n  \"path\": \"file.csv\"\n}\n",
                     "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -1874,7 +1873,6 @@
           },
           "description": {
             "propertyOrder": 60,
-            "format": "textarea",
             "title": "Description",
             "description": "A text description. Markdown is encouraged.",
             "type": "string",
@@ -1921,7 +1919,7 @@
                   "title": "Path",
                   "description": "A fully qualified URL, or a POSIX file path..",
                   "type": "string",
-                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+                  "pattern": ".*",
                   "examples": [
                     "{\n  \"path\": \"file.csv\"\n}\n",
                     "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -1967,7 +1965,7 @@
                   "title": "Path",
                   "description": "A fully qualified URL, or a POSIX file path..",
                   "type": "string",
-                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+                  "pattern": ".*",
                   "examples": [
                     "{\n  \"path\": \"file.csv\"\n}\n",
                     "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
@@ -2197,7 +2195,7 @@
             "title": "Path",
             "description": "A fully qualified URL, or a POSIX file path..",
             "type": "string",
-            "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+            "pattern": ".*",
             "examples": [
               "{\n  \"path\": \"file.csv\"\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
