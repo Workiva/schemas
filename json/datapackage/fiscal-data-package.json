@@ -60,7 +60,6 @@
         },
         "description": {
           "propertyOrder": 50,
-          "format": "textarea",
           "title": "Description",
           "description": "A text description. Markdown is encouraged.",
           "type": "string",
@@ -1879,7 +1878,6 @@
               },
               "description": {
                 "propertyOrder": 60,
-                "format": "textarea",
                 "title": "Description",
                 "description": "A text description. Markdown is encouraged.",
                 "type": "string",
@@ -3890,7 +3888,6 @@
               },
               "description": {
                 "propertyOrder": 60,
-                "format": "textarea",
                 "title": "Description",
                 "description": "A text description. Markdown is encouraged.",
                 "type": "string",
