@@ -47,6 +47,15 @@
         "{\n  \"name\": \"my-nice-name\"\n}\n"
       ]
     },
+    "recordCount": {
+      "propertyOrder": 65,
+      "title": "Record Count",
+      "description": "The number of records in the table.",
+      "type": "integer",
+      "examples": [
+        "{\n  \"recordCount\": 1234\n}\n"
+      ]
+    },
     "path": {
       "propertyOrder": 30,
       "title": "Path",
