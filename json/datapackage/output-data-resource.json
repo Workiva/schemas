@@ -98,6 +98,12 @@
       "title": "Data",
       "description": "Inline data for this resource."
     },
+    "metadataPath": {
+      "propertyOrder": 240,
+      "type": "string",
+      "title": "JSON Metadata Path",
+      "description": "Path to output metadata file for JSON output types."
+    },
     "schema": {
       "propertyOrder": 40,
       "title": "Schema",
